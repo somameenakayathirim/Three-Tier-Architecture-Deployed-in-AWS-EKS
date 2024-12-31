@@ -1,3 +1,6 @@
+![AWS Badge](https://img.shields.io/badge/AWS-Project-blue)
+
+
 # General Overview
 
 Stan's Robot Shop is a sample microservice application you can use as a sandbox to test and learn containerised application orchestration and monitoring techniques. It is not intended to be a comprehensive reference example of how to write a microservices application, although you will better understand some of those concepts by playing with Stan's Robot Shop. To be clear, the error handling is patchy and there is not any security built into the application.
@@ -85,3 +88,20 @@ eksctl create addon \
 
 Navigate to helm directory and execute helm command
 ```helm install robot-shop --namespace robot-shop . ```
+
+Screenshot for Pods,Services, Ingress
+
+![Screenshot](images/pods.png)
+
+![Screenshot](images/services.png)
+
+![Screenshot](images/ingress.png)
+
+AWS Load Balancer Controller 
+
+![Screenshot](images/aws-load-balancer-controller-console.png)
+
+Launch the application using AWS load balancer controller DNS as shown below,
+
+![Screenshot](images/app-robot-shop.png)
+
